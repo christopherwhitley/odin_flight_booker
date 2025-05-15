@@ -1,0 +1,6 @@
+<h2>Flights</h2>
+
+<%= form_with url: flights_path, method: :get, local: true do |form| %>
+  <%= form.select :flight_id, @flights %>
+  <%= form.submit "Search" %>
+<% end %>
